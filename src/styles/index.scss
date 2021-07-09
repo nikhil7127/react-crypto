@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$primaryClr: #f9ac84;
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: $primaryClr;
+}
+
+* {
+  font-family: "Poppins";
+}
+
+.authBtn {
+  width: 30%;
+  margin-top: 5%;
+  padding: 0.5em 0;
+  font-size: 1.6em;
+  border-radius: 10px;
+  background-color: $primaryClr;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+@import "./input.scss";
+@import "./auth.scss";

@@ -1,0 +1,46 @@
+.input-form {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 15px 0;
+  span:last-child {
+    position: absolute;
+    display: none;
+    left: 9%;
+    bottom: -35%;
+    font-size: 1em;
+    color: red;
+    font-weight: 500;
+    &.display {
+      display: block;
+    }
+  }
+  input {
+    width: 80%;
+    outline: none;
+    padding: 0 10px;
+    border: 2px solid #9dabbd;
+    height: 50px;
+    border-radius: 10px;
+    transition: border 250ms ease-in;
+    &:focus {
+      border: 2px solid #586d86;
+    }
+    &.valid + span,
+    &:focus + span {
+      top: 0;
+      background-color: white;
+      font-size: 1.1em;
+      padding: 0 2px;
+    }
+    & + span {
+      position: absolute;
+      left: 10%;
+      font-size: 1.3em;
+      top: 50%;
+      font-weight: 400;
+      transition: top 250ms ease-in;
+      transform: translateY(-50%);
+    }
+  }
+}
